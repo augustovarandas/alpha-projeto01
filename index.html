@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="./index.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="shortcut icon" href="./images//favicon-a.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <meta property="og:title" content="Augusto Varandas - Desenvolvedor Web" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Portfolio de Augusto Varandas com seus projetos iniciais e mídias sociais para contato" />
+  <meta property="og:site_name" content="Augusto Varandas" />
+  <meta property="og:url" content="http://127.0.0.1:5500/" />
+
+  <title>Augusto Varandas</title>
+</head>
+<body>
+  <header>
+    <picture><img src="./images/letra-a.png" alt="Logo com a letra A" width="100px"></picture>
+    <div id="div-menu">
+      <span id="icone-menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+      <menu id="itens">
+        <ul id="menu-itens">
+          <li><a href="#container-sobre-mim">Sobre mim</a></li>
+          <li><a href="#container-projetos">Projetos</a></li>
+          <li><a href="#container-servicos">Serviços</a></li>
+          <li><a href="#container-contato">Contato</a></li>
+          <!-- <li><a onClick="closeMenu()" id="closeMenu">X</a></li> -->
+        </ul>
+      </menu>
+    </div>
+  </header>
+  <main>
+    <section id="container-inicial">
+      <div id="informacoes-basicas-nome">
+        <h1>Augusto Varandas</h1>
+        <h3>Desenvolvedor Web Full Stack</h3>
+        <div class="social-media-buttons">
+          <div class="social-media-button">
+            <a href="https://twitter.com/AugustoVarandas" target="_blank">
+              <img alt="Twitter" src="./images/icons/twitter.svg" width="100%"/>
+            </a>
+          </div>
+          <div class="social-media-button">
+            <a href="https://www.linkedin.com/in/augustovarandas/" target="_blank">
+              <img alt="LinkedIn" src="./images/icons/linkedin.svg"/>
+            </a>
+          </div>
+          <div class="social-media-button">
+            <a href="https://github.com/augustovarandas" target="_blank">
+              <img alt="GitHub" src="./images/icons/github.png" width="48px"/>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p>Bem vindo ao meu portfolio!</p>
+      <p>Abaixo mostro um pouco do meu aprendizado na área da programação.</p>
+    </section>
+    <section id="container-sobre-mim">
+      <div id="sobre-mim-cabecalho">
+        <h2>Sobre mim</h2>
+        <p>Augusto Varandas</p>
+        <p>Desenvolvedor Web Full Stack</p>
+      </div>
+      <div id="sobre-mim-descricao">
+        <p>Olá, me chamo Augusto Varandas e tenho 35 anos.</p>
+        <p>Estou em transição de carreira para a área de programação.</p>
+        <p>Tenho como objetivo me especializar como Desenvolvedor Web Full Stack e aproveitar as diversas oportunidades que a área tem oferecido.</p>
+      </div>
+      <a href="#container-contato" id="botao-sobre-mim">Entre em contato!</a>
+    </section>
+    <section id="container-projetos">
+      <div id="projetos-cabecalho">
+        <h1>Projetos</h1>
+        <p>Aqui mostro alguns projetos que tive a oportunidade de desenvolver nesse meu início de caminha para me tornar um Desenvolvedor Web.</p>
+      </div>
+      <div id="projetos">
+        <div class="projeto">
+          <a href="https://github.com/augustovarandas/alpha-css-flexbox/" target="_blank">
+            <picture>
+              <img src="./images/projeto01.png" alt="Projeto de Landing Page para prática" id="img-projeto01">
+            </picture>
+          </a>
+        </div>
+        <div class="projeto">
+          <a href="https://github.com/augustovarandas/alpha-css-responsivo/tree/main" target="_blank">
+            <picture>
+              <img src="./images/projeto02.png" alt="Projeto de Landing Page para prática" id="img-projeto02">
+            </picture>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="container-servicos">
+      <div id="container-servicos-cabecalho">
+        <h1>Serviços</h1>
+        <p>Como sua empresa pode se beneficiar dos meus serviços.</p>
+      </div>
+      <div class="container-servicos-cards">
+        <div id="card1" class="card">
+          <img src="./images/acessibilidade.png" alt="Imagem de acessibilidade" width="100px">
+          <h2>Acessibilidade</h2>
+          <p>A eficácia de um site é ampliada ao estabelecer uma comunicação acessível com todos os usuários. Incorporar opções de acessibilidade, como ajustes de fonte e contrastes personalizados pelo usuário, contribuirá para tornar seu site mais inclusivo e equitativo.</p>
+        </div>
+        <div id="card2" class="card">
+          <img src="./images/eficacia.png" alt="Imagem de eficiência" width="100px">
+          <h2>Eficácia</h2>
+          <p>Um site de qualidade deve inspirar confiança e oferecer ferramentas intuitivas que permitam aos usuários encontrar facilmente as informações ou produtos desejados, ao mesmo tempo em que os orienta de forma eficaz para a conclusão de uma compra ou contato para transações comerciais.</p>
+        </div>
+        <div id="card3" class="card">
+          <img src="./images/intuicao.png" alt="Imagem representando intuição" width="100px">
+          <h2>Usabilidade intuitiva</h2>
+          <p>Um site de qualidade deve inspirar confiança e oferecer ferramentas intuitivas que permitam aos usuários encontrar facilmente as informações ou produtos desejados, ao mesmo tempo em que os orienta de forma eficaz para a conclusão de uma compra ou contato para transações comerciais.</p>
+        </div>
+        <div id="card4" class="card">
+          <img src="./images/responsivo.png" alt="Imagem representando responsividade" width="100px">
+          <h2>Responsivo</h2>
+          <p>Assegurar a responsividade do sitẹ̣̣̣̣ assegura experiência consistente e visualmente atraente em qualquer tela, garantindo que seus visitantes possam acessar o conteúdo de forma otimizada. Isso não apenas melhora a satisfação do usuário, mas também contribui para a eficácia global do seu site.</p>
+        </div>
+      </div>
+      <div><a href="#container-contato"><button id="botao-servicos">Entre em contato!</button></a></div>
+    </section>
+    <section id="container-contato">
+      <div>
+        <h1>Contato</h1>
+        <p>Se preferir, siga-me em minhas redes sociais!</p>
+      </div>
+      <div class="social-media-buttons">
+        <div class="social-media-button">
+          <a href="https://twitter.com/AugustoVarandas" target="_blank">
+            <img alt="Twitter" src="./images/icons/twitter.svg"/>
+          </a>
+        </div>
+        <div class="social-media-button">
+          <a href="https://www.linkedin.com/in/augustovarandas/" target="_blank">
+            <img alt="LinkedIn" src="./images/icons/linkedin.svg"/>
+          </a>
+        </div>
+        <div class="social-media-button">
+          <a href="https://github.com/augustovarandas" target="_blank">
+            <img alt="GitHub" src="./images/icons/github.png" width="48px"/>
+          </a>
+        </div>
+      </div>
+      <div>
+        <form action="mensagem" id="form">
+          <h3>A qualquer momento!</h3>
+          <input id="nome" type="text" placeholder="Qual seu nome?">
+          <input id="email" type="email" placeholder="Informe seu e-mail.">
+          <input id="telefone" type="tel" name="tel" placeholder="Qual seu telefone?">
+          <button id="botao-contato2">Entre em contato!</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
