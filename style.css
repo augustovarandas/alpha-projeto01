@@ -25,22 +25,20 @@ a {
 }
 
 header {
+  align-items: center;
   display: flex;
+  height: 8rem;
   justify-content: space-between;
   padding: 1rem;
 }
 
 header li > a {
-  color: var(--detalhes-laranja);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 #icone-menu {
-  color: var(--detalhes-laranja);
-  position: absolute;
-  right: 2rem;
   scale: 2;
-  top: 3rem;
 }
 
 menu {
@@ -49,11 +47,9 @@ menu {
 }
 
 #itens {
-  align-items: center;
-  background-color: var(--menu-background);
   border-radius: 15px;
   display: none;
-  height: 30vh;
+  height: calc(100vh - 8rem);
   justify-content: center;
   left: 0;
   margin-top: 5rem;
@@ -66,15 +62,21 @@ menu {
 #menu-itens {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 2rem;
   list-style: none;
+}
+
+#menu-itens > li > a {
+  border-bottom: 0.0625rem solid rgba(0,0,0,0.6);
+  margin-inline: 1rem;
+  padding: 1rem 0;
 }
 
 #container-inicial {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  height: 82vh;
+  height: calc(100vh - 8rem);
   justify-content: center;
   padding: 0.5rem;
   position: relative;
@@ -121,7 +123,7 @@ menu {
 }
 
 #sobre-mim-descricao p {
-  line-height: 1.4rem;
+  line-height: 3rem;
   text-align: left;
 }
 
@@ -240,17 +242,16 @@ menu {
   background-color: var(--background-azul);
   border: 0;
   border-bottom: 0.5px solid var(--cor-letras);
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   margin: 1.5rem;
   width: 70%;
 }
 
 #botao-contato2 {
-  background-color: var(--detalhes-laranja);
   border: 0;
   border-radius: 15px;
-  color: var(--cor-letras);
+  color: var(--background-azul);
   cursor: pointer;
   font-size: 1.5rem;
   margin: 1rem;
@@ -282,7 +283,8 @@ menu {
 
 @media (min-width: 1024px) {
   header {
-    padding: 2rem 8rem;
+    height: 8rem;
+    padding: 8rem;
   }
 
   header > picture > img {
@@ -313,26 +315,32 @@ menu {
   p {
     font-size: 1.5rem;
   }
+  
+  #itens {
+    background-color: transparent;
+    display: flex;
+    height: 8rem;
+    justify-content: flex-end;
+    padding: 0 3rem;
+  }
+  
+  #menu-itens {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  #menu-itens > li > a {
+    border-bottom: 0;
+  }
 
   #icone-menu {
     display: none;
   }
 
-  menu {
-    background-color: var(--background-azul);
-    top: 2rem;
-  }
-
-  #itens {
-    display: flex;
-  }
-
-  #menu-itens {
-    background-color: var(--background-azul);
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    margin-top: -3rem;
+  #container-inicial {
+    height: calc(100vh - 16rem);
   }
 
   .social-media-button:hover:nth-child(1) {
@@ -401,5 +409,9 @@ menu {
 
   #container-contato > .social-media-buttons {
     transform: scale(1.5);
+  }
+
+  #fechar {
+    display: none;
   }
 }
